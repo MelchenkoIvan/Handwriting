@@ -7,11 +7,10 @@ from HandwritingWeb.NN.src.main import infer
 from HandwritingWeb.form import ImageForm
 import os
 
-
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 fnCharList = 'HandwritingWeb/NN/model/charList.txt'
-fnInfer = 'media/photoNumber/test.png'
+fnInfer = 'media/photoNumber/line.png'
 
 
 def HandwritingView(request):
@@ -27,7 +26,7 @@ def HandwritingView(request):
             answerNN = infer(model, filename)
 
             answer = answerNN
-            return render(request, "HandwritingWeb/result.html", {'answer': answer})
+            return render(request, "HandwritingWeb/resul2.html", {'answer': answer, 'filename': filename})
         else:
             i_form = ImageForm()
             return render(request, "HandwritingWeb/handwriting.html", {'i_form': i_form})
@@ -37,4 +36,8 @@ def HandwritingView(request):
 
 
 def ResultView(request):
-    return render(request, "HandwritingWeb/result.html")
+    return render(request, "HandwritingWeb/resul2.html")
+
+
+def AboutProgramView(request):
+    return render(request, "HandwritingWeb/about_program.html")

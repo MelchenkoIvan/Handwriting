@@ -13,7 +13,6 @@
             }else{
             button.value='What is it?';
             }
-
         }
 }
 

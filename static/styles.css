@@ -35,8 +35,8 @@ body {
 }
 
 .header_right a {
-    font-size: 18px;
-    color: #8E8D8A;
+        font-size: 25px;
+        color: #8E8D8A;
 }
 
 .link {
@@ -44,7 +44,7 @@ body {
 }
 
 .block {
-    /*text-align: center;*/
+    text-align: center;
     margin-top: 30px;
     margin-bottom: 100px;
 }
@@ -163,4 +163,14 @@ body {
 }
 .plus_photo {
     width: 100%;
+}
+
+.result {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.result_item {
+    margin: auto 0;
 }
