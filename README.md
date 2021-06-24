@@ -18,6 +18,7 @@ Follow these instructions to get the IAM dataset:
 * The IAM dataset is split into 95% training data and 5% validation data
 * If the option --line_mode is specified, the model is trained on text line images created by combining multiple word images into one
 * Training stops after a fixed number of epochs without improvement
+
 Command :
 ```
 $ python main.py --mode train --fast --data_dir path/to/iam  --batch_size 500 --early_stopping 15
