@@ -6,7 +6,7 @@ You will need this system to convert your handwriting to text. The system will b
 ## Train model on IAM dataset
 ### Prepare dataset
 Follow these instructions to get the IAM dataset:
-* Register for free at this [ebsite](https://fki.tic.heia-fr.ch/databases/iam-handwriting-database)
+* Register for free at this [website](https://fki.tic.heia-fr.ch/databases/iam-handwriting-database)
 * Download words/words.tgz
 * Download ascii/words.txt
 * Create a directory for the dataset on your disk, and create two subdirectories: img and gt
